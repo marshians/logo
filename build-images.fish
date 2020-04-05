@@ -34,7 +34,9 @@ inkscape -z -w 70 -h 70 $SVG -e dist/$NAME/images/mstile-70x70.png
 cp $SVG dist/$NAME/images/safari-pinned-tab.svg
 cp browserconfig.xml favicons.html manifest.json dist/$NAME/
 inkscape -z -w 400 -h 400 -e dist/$NAME/{$NAME}-400.png $SVG
+inkscape -z -w 600 -h 600 -e dist/$NAME/{$NAME}-600.png $SVG
 inkscape -z -w 800 -h 800 -e dist/$NAME/{$NAME}-800.png $SVG
 convert dist/$NAME/{$NAME}-400.png -gravity center -background "#5D4037" -extent 1920x1080 dist/$NAME/{$NAME}-background-2k.png
 convert dist/$NAME/{$NAME}-800.png -gravity center -background "#5D4037" -extent 3840x2160 dist/$NAME/{$NAME}-background-4k.png
-convert dist/$NAME/{$NAME}-800.png -gravity center -background "#5D4037" -extent 1600x900 dist/$NAME/{$NAME}-background-phone.png
+convert dist/$NAME/{$NAME}-600.png -gravity center -background "#5D4037" -extent 2560x1440 dist/$NAME/{$NAME}-background-3k.png
+convert dist/$NAME/{$NAME}-800.png -gravity center -background "#5D4037" -extent 1440x2560 dist/$NAME/{$NAME}-background-phone.png
