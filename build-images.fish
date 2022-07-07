@@ -44,3 +44,7 @@ convert dist/$NAME/$NAME-800.png -gravity center -background \"$BACKGROUND\" -al
 convert dist/$NAME/$NAME-600.png -gravity center -background \"$BACKGROUND\" -alpha background -flatten -extent 2560x1440 dist/$NAME/$NAME-background-3k.png
 convert dist/$NAME/$NAME-800.png -gravity center -background \"$BACKGROUND\" -alpha background -flatten -extent 1440x2560 dist/$NAME/$NAME-background-phone.png
 convert dist/$NAME/favicon.png dist/$NAME/favicon.ico" | parallel -j+0
+
+pushd dist/$NAME
+zip -r $NAME.zip (/bin/ls | grep -v $NAME)
+popd

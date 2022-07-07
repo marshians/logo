@@ -1,0 +1,57 @@
+[
+  {
+    "name": "pink",
+    "foreground": "#FF6188",
+    "background": "#2D2A2E"
+  },
+  {
+    "name": "orange",
+    "foreground": "#FC9867",
+    "background": "#2D2A2E"
+  },
+  {
+    "name": "yellow",
+    "foreground": "#FFD866",
+    "background": "#2D2A2E"
+  },
+  {
+    "name": "green",
+    "foreground": "#A9DC76",
+    "background": "#2D2A2E"
+  },
+  {
+    "name": "blue",
+    "foreground": "#78DCE8",
+    "background": "#2D2A2E"
+  },
+  {
+    "name": "violet",
+    "foreground": "#AB9DF2",
+    "background": "#2D2A2E"
+  },
+  {
+    "name": "pink-inverted",
+    "foreground": "#2D2A2E",
+    "background": "#FF6188"
+  },
+  {
+    "name": "orange-inverted",
+    "foreground": "#2D2A2E",
+    "background": "#FC9876"
+  },
+  {
+    "name": "yellow-inverted",
+    "foreground": "#2D2A2E",
+    "background": "#FFD866"
+  },
+  {
+    "name": "green-inverted",
+    "foreground": "#2D2A2E",
+    "background": "#A9DC76"
+  },
+  {
+    "name": "blue-inverted",
+    "foreground": "#2D2A2E",
+    "background": "#78DCE8"
+  }
+]
