@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logo
+  labels:
+    app: logo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: logo
+  template:
+    metadata:
+      labels:
+        app: logo
+    spec:
+      containers:
+      - name: logo
+        image: cr.marsh.gg/marshians/logo:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: logo
+spec:
+  selector:
+    app: logo
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
