@@ -8,7 +8,7 @@ pipeline {
     stage ('build and push') {
       steps {
         container('build') {
-          sh "make install build"
+          sh "apk update && apk upgrade && apk add make && make install build"
         }
         container('kaniko') {
           sh "/kaniko/executor --dockerfile Dockerfile --context . --destination cr.marsh.gg/marshians/logo:latest"

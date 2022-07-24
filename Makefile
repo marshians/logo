@@ -1,6 +1,5 @@
 install:
-	apk update && apk upgrade
-	apk add fish jq inkscape parallel convert zip make 
+	apk add fish jq inkscape parallel convert zip 
 	apk add font-fira-code --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ 
 	echo "will cite" | parallel --citation
 
