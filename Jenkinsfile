@@ -11,7 +11,7 @@ pipeline {
           sh "apk update && apk upgrade && apk add make && make install build"
         }
         container('kaniko') {
-          sh "/kaniko/executor --dockerfile Dockerfile --context . --destination cr.marsh.gg/marshians/logo:latest"
+          sh "/kaniko/executor --force --dockerfile Dockerfile --context . --destination cr.marsh.gg/marshians/logo:latest"
         }
       }
     }
