@@ -1,0 +1,35 @@
+name: pages
+
+jobs:
+  build:
+    steps:
+    - uses: actions/checkout@v3
+    - name: install-tools
+      run: |
+        sudo apt-add-repository ppa:fish-shell/release-3
+        sudo apt-get install jq inkscape parallel imagemagick zip fonts-firacode fish
+    - name: build-images
+      run:  make build
+    - name: create-tarball
+      run: |
+        mkdir -p pages/
+        cp -af colors.json monokai.json www/* pages/
+        cp -af dist/marshians-green/ pages/
+        cp -af marshians-green-inverted.svg pages/images/logo.svg
+        cp dist/ pages/dist/
+    - uses: actions/upload-pages-artifact@v1
+      with:
+        path: pages/
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1

@@ -1,4 +1,4 @@
-#!/usr/bin/fish
+#!/usr/bin/env fish
 
 set SVG $argv[1]
 set BACKGROUND $argv[2]
