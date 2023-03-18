@@ -18,7 +18,7 @@ jobs:
         cp -af colors.json monokai.json www/* pages/
         cp -af dist/marshians-green/ pages/
         cp -af marshians-green-inverted.svg pages/images/logo.svg
-        cp dist/ pages/dist/
+        cp -af dist/ pages/dist/
     - uses: actions/upload-pages-artifact@v1
       with:
         path: pages/
