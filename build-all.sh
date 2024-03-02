@@ -24,7 +24,7 @@ function build-images () {
     inkscape -w 60 -h 60 $SVG -o "dist/$NAME/images/apple-touch-icon-60x60.png"
     inkscape -w 72 -h 72 $SVG -o "dist/$NAME/images/apple-touch-icon-72x72.png"
     inkscape -w 76 -h 76 $SVG -o "dist/$NAME/images/apple-touch-icon-76x76.png"
-    inkscape -w 180 -h 180 $SVG -o "dist/$NAME/images/apple-touch-ico-precomposed.png"
+    inkscape -w 180 -h 180 $SVG -o "dist/$NAME/images/apple-touch-icon-precomposed.png"
     inkscape -w 180 -h 180 $SVG -o "dist/$NAME/images/apple-touch-icon.png"
     inkscape -w 16 -h 16 $SVG -o "dist/$NAME/images/favicon-16x16.png"
     inkscape -w 194 -h 194 $SVG -o "dist/$NAME/images/favicon-194x194.png"
