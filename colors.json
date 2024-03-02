@@ -53,5 +53,10 @@
     "name": "blue-inverted",
     "foreground": "#11111b",
     "background": "#89b4fa"
+  },
+  {
+    "name": "violet-inverted",
+    "foreground": "#11111b",
+    "background": "#b4befe"
   }
 ]

@@ -50,11 +50,11 @@ function build-images () {
     cd ../..
 }
 
-jq -r '.[] | [.name, .foreground, .background] | @tsv' < colors.json | while read NAME FOREGROUND BACKGROUND; do
-    echo $NAME $FOREGROUND $BACKGROUND
-    sed -e "s/BACKGROUND/$BACKGROUND/g" -e "s/FOREGROUND/$FOREGROUND/g" marshians.svg > marshians-$NAME.svg
-    sed -e "s/BACKGROUND/$BACKGROUND/g" -e "s/FOREGROUND/$FOREGROUND/g" marshians-text.svg > marshians-text-$NAME.svg
-		build-images marshians-$NAME.svg "$NAME" "$BACKGROUND"
-		build-images marshians-text-$NAME.svg "$NAME-text" "$BACKGROUND"
+jq -r '.[] | [.name, .foreground, .background] | @tsv' < colors.json | while read COLOR FOREGROUND BACKGROUND; do
+    echo $COLOR $FOREGROUND $BACKGROUND
+    sed -e "s/BACKGROUND/$BACKGROUND/g" -e "s/FOREGROUND/$FOREGROUND/g" marshians.svg > marshians-$COLOR.svg
+    sed -e "s/BACKGROUND/$BACKGROUND/g" -e "s/FOREGROUND/$FOREGROUND/g" marshians-text.svg > marshians-text-$COLOR.svg
+		build-images marshians-$COLOR.svg "marshians-$COLOR" "$BACKGROUND"
+		build-images marshians-text-$COLOR.svg "marshians-text-$COLOR" "$BACKGROUND"
   done
 
