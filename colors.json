@@ -1,57 +1,57 @@
 [
   {
     "name": "pink",
-    "foreground": "#FF6188",
-    "background": "#2D2A2E"
+    "foreground": "#f38ba8",
+    "background": "#11111b"
   },
   {
     "name": "orange",
-    "foreground": "#FC9867",
-    "background": "#2D2A2E"
+    "foreground": "#fab387",
+    "background": "#11111b"
   },
   {
     "name": "yellow",
-    "foreground": "#FFD866",
-    "background": "#2D2A2E"
+    "foreground": "#f9e2af",
+    "background": "#11111b"
   },
   {
     "name": "green",
-    "foreground": "#A9DC76",
-    "background": "#2D2A2E"
+    "foreground": "#a6e3a1",
+    "background": "#11111b"
   },
   {
     "name": "blue",
-    "foreground": "#78DCE8",
-    "background": "#2D2A2E"
+    "foreground": "#89b4fa",
+    "background": "#11111b"
   },
   {
     "name": "violet",
-    "foreground": "#AB9DF2",
-    "background": "#2D2A2E"
+    "foreground": "#b4befe",
+    "background": "#11111b"
   },
   {
     "name": "pink-inverted",
-    "foreground": "#2D2A2E",
-    "background": "#FF6188"
+    "foreground": "#11111b",
+    "background": "#f38ba8"
   },
   {
     "name": "orange-inverted",
-    "foreground": "#2D2A2E",
-    "background": "#FC9876"
+    "foreground": "#11111b",
+    "background": "#fab387"
   },
   {
     "name": "yellow-inverted",
-    "foreground": "#2D2A2E",
-    "background": "#FFD866"
+    "foreground": "#11111b",
+    "background": "#f9e2af"
   },
   {
     "name": "green-inverted",
-    "foreground": "#2D2A2E",
-    "background": "#A9DC76"
+    "foreground": "#11111b",
+    "background": "#a6e3a1"
   },
   {
     "name": "blue-inverted",
-    "foreground": "#2D2A2E",
-    "background": "#78DCE8"
+    "foreground": "#11111b",
+    "background": "#89b4fa"
   }
 ]

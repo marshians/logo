@@ -1,3 +1,3 @@
 build: 
-	fish ./build-all.fish
+	./build-all.sh
 .PHONY: build
